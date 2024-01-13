@@ -1,0 +1,120 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background-color: rgb(29, 28, 28);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;                /*this will display home and about horizontally*/
+    align-items: center;
+    list-style-type: none;        /* dots will be removed*/
+    height: 65px;
+    background-color: black;
+    color: white;               /*color of SPOTIFY(name) */
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{                       /* for SPOTIFY(image)*/
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{                            /* for SPOTIFY(name) */
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: cyan;
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('https://wallpaperaccess.com/full/2637470.jpg');
+}
+
+.bottom{           /* the container which contains the progress bar*/
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgessBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+
+.songItem img{
+    width: 59px;
+    margin:0 23px;
+    border-radius: 12px;
+
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 0;
+    color: whitesmoke;
+    font-family: 'Ubuntu',sans-serif;
+    
+}
+
+.songInfo img{
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+}
+
+i.fa {
+    font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
